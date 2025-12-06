@@ -1,0 +1,16 @@
+model,dataset,accuracy,latency,notes
+distilbert-base-uncased-finetuned-sst-2-english,SST-2,92.1,0.55,Fast and reliable for SST-2
+distilbert-base-uncased-finetuned-sst-2-english,IMDB,87.6,0.92,Good general sentiment model
+distilbert-base-uncased-finetuned-sst-2-english,TweetEval,78.4,0.48,Struggles with short noisy tweets
+textattack/bert-base-uncased-SST-2,SST-2,94.8,1.25,Finetuned heavily for SST-2; best task-specific accuracy
+textattack/bert-base-uncased-SST-2,IMDB,90.3,2.10,Strong cross-domain generalization
+textattack/bert-base-uncased-SST-2,TweetEval,81.2,1.20,Above-average performance on short text
+finiteautomata/bertweet-base-sentiment-analysis,TweetEval,92.4,1.40,Top-tier tweet sentiment performance
+finiteautomata/bertweet-base-sentiment-analysis,SST-2,88.1,1.55,Less effective on longer reviews
+finiteautomata/bertweet-base-sentiment-analysis,IMDB,85.7,2.40,Underperforms on long-form text
+siebert/sentiment-roberta-large-english,SST-2,96.1,2.15,Highest SST-2 accuracy; slow
+siebert/sentiment-roberta-large-english,IMDB,92.8,3.90,High accuracy but expensive
+siebert/sentiment-roberta-large-english,TweetEval,84.2,2.20,Strong general sentiment abilities
+roberta-large-mnli,SST-2,93.0,2.00,General-purpose NLI model adapted for sentiment
+roberta-large-mnli,IMDB,90.1,3.60,Performs well but slower
+roberta-large-mnli,TweetEval,82.7,2.05,Handles ambiguous sentiment reasonably well

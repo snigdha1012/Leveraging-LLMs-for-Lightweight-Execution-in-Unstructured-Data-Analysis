@@ -1,0 +1,10 @@
+model,dataset,bleu,rouge,latency,notes
+t5-small,CNN-DailyMail,17.0,21.1,0.42,"Small model, weak abstractive quality but fast"
+t5-small,XSum,12.4,18.0,0.39,"Struggles with extreme summarization"
+t5-small,WikiLingua,14.2,20.3,0.41,"Moderate multilingual summarization"
+google/mt5-small,CNN-DailyMail,18.8,22.4,0.55,"Better multilingual coverage"
+google/mt5-small,XSum,15.0,21.2,0.53,"Improved short-summary abstraction"
+google/mt5-small,WikiLingua,20.5,25.0,0.60,"Strong multilingual summarization"
+facebook/bart-base,CNN-DailyMail,27.9,33.8,1.10,"State-of-the-art baseline for CNN/DM"
+facebook/bart-base,XSum,23.5,28.2,1.05,"Handles abstractive summarization very well"
+facebook/bart-base,WikiLingua,19.2,24.0,1.15,"Good but slower on multilingual tasks"

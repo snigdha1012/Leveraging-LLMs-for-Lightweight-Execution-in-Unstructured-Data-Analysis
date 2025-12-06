@@ -1,0 +1,13 @@
+model,dataset,accuracy,latency,notes
+papluca/xlm-roberta-base-language-detection,WiLI-2018,95.6,1.80,Strong multilingual baseline; robust 90+ languages
+papluca/xlm-roberta-base-language-detection,UDHR,93.8,1.75,Good cross-domain generalization
+papluca/xlm-roberta-base-language-detection,Wiki40B,96.1,1.82,Excels at long-form text
+Joshi-Aryan/Fine_Tuned_HF_Language_Identification_Model,WiLI-2018,97.4,2.10,Fine-tuned XLM-R; SOTA-level accuracy
+Joshi-Aryan/Fine_Tuned_HF_Language_Identification_Model,UDHR,95.9,2.05,Very strong morphological generalization
+Joshi-Aryan/Fine_Tuned_HF_Language_Identification_Model,Wiki40B,97.1,2.15,High accuracy but slightly slower
+langid.py,WiLI-2018,88.2,0.05,Extremely fast; older but reliable
+langid.py,UDHR,85.7,0.04,Weak on rare languages
+langid.py,Wiki40B,89.4,0.05,Fastest model but lowest accuracy
+fastText-LID176,WiLI-2018,93.0,0.12,Fast and strong classical baseline
+fastText-LID176,UDHR,91.2,0.11,Great latency-accuracy balance
+fastText-LID176,Wiki40B,94.3,0.13,Good on medium-length sequences
